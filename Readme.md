@@ -58,12 +58,14 @@ az container create \
 
 Tip: you can generate your keys with these commands:
 
-```
+```sh
 ssh-keygen -t ed25519 -f ssh_host_ed25519_key < /dev/null
 ssh-keygen -t rsa -b 4096 -f ssh_host_rsa_key < /dev/null
 ```
+
 and then you can obtain the base64 string to use in ACI Secrets with these:
-```
+
+```sh
 base64 -w0 ssh_host_ed25519_key
 base64 -w0 ssh_host_rsa_key
 ```
