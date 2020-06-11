@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if [ -d /ssh ]; then
+    cp -v /ssh/ssh_host_*key /etc/ssh
+fi
