@@ -1,8 +1,12 @@
 # ACI-SFTP
 
-![Docker Stars](https://img.shields.io/docker/stars/arkenergy/aci-sftp.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/arkenergy/aci-sftp.svg)
-
 ![OpenSSH logo](https://raw.githubusercontent.com/atmoz/sftp/master/openssh.png "Powered by OpenSSH")
+
+## BREAKING: Move from DockerHub to Github Packages
+
+Due to [`Free Team`](https://www.docker.com/blog/we-apologize-we-did-a-terrible-job-announcing-the-end-of-docker-free-teams/) tier being sunset by DockerHub, ARK is going to deprecate Docker image repositoy.
+
+Update your deployments from `arkenergy/aci-sftp:latest` to `ghcr.io/arklab/aci-sftp:latest`.
 
 ## Host SFTP on Azure Container Instances
 
@@ -24,7 +28,7 @@ properties:
   containers:
   - name: sftp
     properties:
-      image: arkenergy/aci-sftp:latest
+      image: ghcr.io/arklab/aci-sftp:latest
       resources:
         requests:
           cpu: 1
