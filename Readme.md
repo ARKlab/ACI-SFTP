@@ -10,7 +10,7 @@ Update your deployments from `arkenergy/aci-sftp:latest` to `ghcr.io/arklab/aci-
 
 ## Host SFTP on Azure Container Instances
 
-This image is based on [atmoz/sftp:latest](https://hub.docker.com/r/atmoz/sftp/) with the addition of sourcing SSH Keys from /ssh
+This image is based on [atmoz/sftp:debian](https://hub.docker.com/r/atmoz/sftp/) with the addition of sourcing SSH Keys from /ssh
 
 Azure Container Instances doesn't allow to mount single files but only folders.
 Mounting `/etc/ssh` for using stable keys would override the `/etc/ssh/ssh_config` and other files present in `/etc/ssh`.
