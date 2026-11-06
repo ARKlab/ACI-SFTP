@@ -1,4 +1,4 @@
-FROM atmoz/sftp
+FROM atmoz/sftp:debian
 
 LABEL maintainer="andrea.cuneo@ark-energy.eu"
 
